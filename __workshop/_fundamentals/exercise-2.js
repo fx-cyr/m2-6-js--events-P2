@@ -19,9 +19,12 @@ const people = [
 // the average age of the `people` in that array (rounded to the nearest unit.)
 // Use Math.round()
 
-function avgAge(peopleArr) {
-  // return something
-}
+let avgAge = (peopleArr) => {
+  let ages = people.map(people => people.age)
+  let sum = ages.reduce((acc, cv) => acc + cv)
+  let average = Math.floor(sum / people.length)
+  return average
+  }
 
 // 2. Do a console.log to verify your function.
 

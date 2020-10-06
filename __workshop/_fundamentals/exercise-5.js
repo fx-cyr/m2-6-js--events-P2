@@ -85,9 +85,10 @@ const staffMembers = [
   },
 ];
 
-const getData = (arr, key, val) => {
-  // return something
-};
+let getData = (arr, key, val) => {
+
+  return staffMembers.filter((staffMembers) => staffMembers.skillLevels[key] >= val)
+  }
 
 // 2. Do a console.log to verify your function.
 

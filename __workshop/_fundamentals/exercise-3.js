@@ -17,8 +17,8 @@ const people = [
 // 1. Write a function that, when passed an array of *people* (person objects) as
 // an argument and returns an array of their full names (each full name is a string).
 
-function fullName(peopleArr) {
-  // return something
+let fullName = (peopleArr) => {
+  return people.map(people => `${people.name.first ? `${people.name.first}`:""} ${people.name.middle ? `${people.name.middle}`:""} ${people.name.last ? `${people.name.last}`:""}`)
 }
 
 // 2. Do a console.log to verify your function.
