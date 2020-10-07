@@ -14,35 +14,35 @@
   </head>
   <body>
     <div class="wrapper">
-        <form>
+        <form id="form">
           <h1>Signup Form</h1>
           <div class="section">
-            <label for="">Full name: </label><input type="text" value="" id="fullname" required autofocus>
+            <label for=""fullname>Full name: </label><input type="text" value="" id="fullname" required autofocus>
           </div>
           <div class="section">
-            <label for="">Street address: </label><input type="text" value="" id="streetaddress" required>
+            <label for="streetaddress">Street address: </label><input type="text" value="" id="streetaddress" required>
           </div>
           <div class="section">
-            <label for="">Email address: </label><input type="email" value="" id="emailaddress" required>
+            <label for="emailaddress">Email address: </label><input type="email" value="" id="emailaddress" required>
           </div>
           <div class="section">
-            <label for="">Phone number: </label><input type="tel" value="" id="phonenumber" required>
+            <label for="phonenumber">Phone number: </label><input type="tel" value="" id="phonenumber" required>
           </div>
           <div class="section">
-            <label for="">Password: </label><input type="password" value="" id="password" required>
+            <label for="password">Password: </label><input type="password" value="" id="password" required>
           </div>
           <div class="section">
-            <label for="">Confirm password: </label><input type="password" value="" id="confirmpassword" required>
+            <label for="confirmpassword">Confirm password: </label><input type="password" value="" id="confirmpassword" required>
           </div>
           <div class="termsAndServices">
-            <input type="checkbox" value="" id="termsandservices" required oninvalid="alert('Please agree to the terms and services before submitting')"><label for="">I agree to <a href="#">Terms & Services</a></label>
+            <input type="checkbox" value="" id="termsandservices" required oninvalid="alert('Please agree to the terms and services before submitting')"><label for="termsandservices">I agree to <a href="#">Terms & Services</a></label>
           </div>
-          <div>
+          <div class="errorBox" id="errormessage">
           <!--ERROR MESSAGE--> 
           </div>
-          <div class="formButtons">
+          <footer class="formButtons">
           <button type="reset" class="clear" id="reset">Clear</button> <button type="submit" class="submit" id="submit">Submit</button>
-        </div>
+          </footer>
 
         </form>
     </div>
